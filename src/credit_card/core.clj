@@ -1,7 +1,7 @@
 (ns credit-card.core)
 
 (require '[clj-time.core :as t])
-(require '[credit_card.nu :as n.db])
+(require '[credit_card.db :as n.db])
 
 (defn filter-purchase-by-category [purchases, category]
   (-> (fn [purchase] (= category (:category purchase)))

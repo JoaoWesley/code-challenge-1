@@ -1,11 +1,11 @@
-(ns credit_card.nu)
+(ns credit_card.db)
 
 (require '[clj-time.core :as t])
 
 (def category {:restaurant "RESTAURANT" :services "SERVICES" :supermarket "SUPERMARKET", :others "OTHERS"})
 
-(def client1 {:id :1 :name "somename" :cpf "467.080.150-30" :email "someemail@gmail.com"})
-(def client2 {:id :2 :name "someothername" :cpf "572.080.150-30" :email "someotheremail@gmail.com"})
+(def client1 {:id :1 :name "someName" :cpf "467.080.150-30" :email "someemail@gmail.com"})
+(def client2 {:id :2 :name "someOtherName" :cpf "572.080.150-30" :email "someotheremail@gmail.com"})
 
 (def credit-card1 {:id 1 :number 5200994615553840 :cvv 430 :expiration-date "11/07/2022" :limit 1000})
 (def credit-card2 {:id 2 :number 5311994615553840 :cvv 430 :expiration-date "11/07/2022" :limit 1000})
